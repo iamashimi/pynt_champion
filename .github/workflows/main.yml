@@ -19,7 +19,7 @@ jobs:
         python3 -m pip install --upgrade pyntcli 
     - name: get restful_booker collection 
       run: | 
-        curl https://raw.githubusercontent.com/pynt-io/pynt/main/goat_functional_tests/goat.postman_collection.json -o goat.json 
+        curl https://raw.githubusercontent.com/iamashimi/pynt_champion/main/Restful_Booker.json -o restful_booker.json 
     - name: run pynt with newman integration 
       run: | 
-        pynt newman --collection goat.json --reporters
+        pynt newman --collection restful_booker.json --reporters
